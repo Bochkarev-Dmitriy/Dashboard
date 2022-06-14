@@ -1,0 +1,537 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="stylesdashboard.css">
+</head>
+<body>
+
+            <!-- Боковое меню -->
+
+    <div class="container-menu capitalize">
+        <p class="fat">
+            company
+        </p>
+        <hr>
+        <ul class="menu">
+            <li class="menu-item">
+                <a href="../dashboard/indexdashboard.html">
+                    <span class="menu-img dashboard_gray menu-img">
+                        <font class="menu-point">
+                            dashboard
+                        </font>
+                    </span>
+                </a>
+            </li>
+            <li class="menu-item">
+                <a href="../user/indexuser.html" class="menu-img menu-img">  
+                    <span class="menu-img account_gray">
+                        <font class="menu-point">
+                            user profile
+                        </font>
+                    </span> 
+                </a>
+            </li>
+            <li class="menu-item">
+               <a href="#" class="menu-img"> 
+                    <span class="menu-img map_gray menu-img">
+                        <font class="menu-point">
+                            maps
+                        </font>
+                    </span> 
+                </a>
+            </li>
+            <li class="menu-item">
+                <a href="#" class="menu-img"> 
+                    <span  class="menu-img notify_gray menu-img">
+                        <font class="menu-point">
+                            notifications
+                        </font>
+                    </span> 
+                </a>
+            </li>
+            <li class="menu-item">
+                <a href="#" class="menu-img"> 
+                    <span class="menu-img support_gray menu-img">
+                        <font class="menu-point">
+                            support
+                        </font>
+                    </span> 
+                </a>
+            </li>
+        </ul>
+    </div>
+
+            <!-- Общий контейнер -->
+
+    <div class="container">
+        
+            <!-- Хедер -->
+
+        <div class="heading flex">
+            <a href="#" class="burger">
+                <img src="../images/menu.png" alt="menu">
+            </a>
+            <p class="capitalize fat">
+                dashboard
+            </p>
+        </div>
+        
+            <!-- Верхний контейнер (состоящий из четырёх карточек(левая и правая части))       -->
+        
+        <div class="select-container flex">
+            
+            <!-- Левая часть -->
+            
+            <div class="select flex">
+                
+            <!-- Зеленая карточка -->
+                
+                <div class="model">
+                    <div class="model-top flex">
+                        <div class="pictogram flex green">
+                            <img src="../images/data_white.svg" alt="data" class="data-img">
+                        </div>
+                        <p class="text-1 capitalize small">
+                            used spase <br>
+                            <font class="x-large"> 
+                                49/50 GB 
+                            </font>
+                        </p>
+                    </div>
+                    <hr>
+                    <div class="model-neither flex">
+                        <img src="../images/alert.png" alt="alert" class="alert">
+                        <p class="x-small">
+                            Get more space...
+                        </p>
+                    </div>
+                </div>
+                
+            <!-- Оранжевая карточка -->
+                
+                <div class="model">
+                    <div class="model-top flex">
+                        <div class="pictogram flex orange">
+                            <img src="../images/shop_white.svg" alt="shop" class="data-img">
+                        </div>
+                        <p class="text-1 capitalize small">
+                            revenue <br>
+                            <font class="x-large"> 
+                                $34,245 
+                            </font>
+                        </p>
+                    </div>
+                    <hr>
+                    <div class="model-neither flex">
+                        <img src="../images/calendar.png" alt="calendar" class="alert">
+                        <p class="x-small">
+                            Last 24 Hours...
+                        </p>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Правая часть -->
+            
+            <div class="select flex">
+                
+            <!-- Синяя карточка -->
+                
+                <div class="model">
+                    <div class="model-top flex">
+                        <div class="pictogram flex blue">
+                            <img src="../images/tag_white.svg" alt="tag" class="data-img">
+                        </div>
+                        <p class="text-1 capitalize small">
+                            fixed issues <br>
+                            <font class="x-large"> 
+                                75 
+                            </font>
+                        </p>
+                    </div>
+                    <hr>
+                    <div class="model-neither flex">
+                        <img src="../images/down.png" alt="down" class="alert">
+                        <p class="x-small">
+                            Tracked from Github...
+                        </p>
+                    </div>
+                </div>
+                
+            <!-- Пурпурная карточка -->
+                
+                <div class="model">
+                    <div class="model-top flex">
+                        <div class="pictogram flex purple">
+                            <img src="../images/paperplane_white.svg" alt="paperplane" class="data-img">
+                        </div>
+                        <p class="text-1 capitalize small">
+                            followers <br>
+                            <font class="x-large"> 
+                                +245 
+                            </font>
+                        </p>
+                    </div>
+                    <hr>
+                    <div class="model-neither flex">
+                        <img src="../images/time.png" alt="alert" class="alert">
+                        <p class="x-small">
+                            Just updsted...
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+            <!-- Средний контейнер (состоящий из трёх графиков) -->
+
+        <div class="analytics-container flex">
+            
+            <!-- Зеленый график -->
+            
+            <div class="analytics flex">
+                <div class="graphics green flex">
+                    <img src="../images/graphics.svg" alt="graphics">
+                </div>
+                <div class="analytics-inform">
+                    <p class="small">
+                        <font class="large capitalize">
+                            daily sales 
+                        </font>
+                        <br>
+                        55% increase in today sales
+                    </p>
+                    <hr>
+                    <div class="timer flex">
+                        <img src="../images/time.png" alt="watch" class="watch">
+                        <p class="timer-text x-small">    
+                            updated 4 minutes ago...
+                        </p>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Оранжевый график -->
+
+            <div class="analytics flex">
+                <div class="graphics orange flex">
+                    <img src="../images/graphics.svg" alt="graphics">
+                </div>
+                <div class="analytics-inform">
+                    <p class="small">
+                        <font class="large capitalize">
+                            email subscriptions 
+                        </font>
+                        <br>
+                        Last Campaign Performance
+                    </p>
+                    <hr>
+                    <div class="timer flex">
+                        <img src="../images/time.png" alt="watch" class="watch">
+                        <p class="timer-text x-small">    
+                            campaign sent 2 days ago...
+                        </p>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Синий график -->
+            
+            <div class="analytics flex">
+                <div class="graphics blue flex">
+                    <img src="../images/graphics.svg" alt="graphics">
+                </div>
+                <div class="analytics-inform">
+                    <p class="small">
+                        <font class="large capitalize">
+                            completed tasks 
+                        </font>
+                        <br>
+                        Last Campaign Performance
+                    </p>
+                    <hr>
+                    <div class="timer flex">
+                        <img src="../images/time.png" alt="watch" class="watch">
+                        <p class="timer-text x-small">    
+                            campaign event 2 days ago...
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+            <!-- Нижний контейнер (состоящий из двух списков) -->
+            
+        <div class="service-container flex">
+            
+            <!-- Левая часть -->
+            
+            <div class="service flex">
+                <div class="nested_header flex">
+                    <p class="color-white capitalize">
+                        tasks:
+                    </p>
+                    <nav class="nav">
+                        <ul>
+                            <li class="menu-nested">
+                                <a href="#" class="color-white capitalize">
+                                    <img src="../images/bug.svg" alt="bug" class="imd-white size">
+                                    bugs
+                                </a>
+                            </li>
+                            <li class="menu-nested">
+                                <a href="#" class="color-white capitalize">
+                                    <img src="../images/web.svg" alt="web" class="imd-white size">
+                                    website
+                                </a>
+                            </li>
+                            <li class="menu-nested">
+                                <a href="#" class="color-white capitalize">
+                                    <img src="../images/cloud.svg" alt="cloud" class="imd-white size">
+                                    server
+                                </a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+                <div class="event-container flex">
+                    <div class="event-line flex">
+                        <div class="event-checkbox">
+                            <input type="checkbox">
+                        </div>
+                        <div class="event-text">
+                            <p class="small">
+                                Sign contract for "What are conference organizers afraid of?"
+                            </p>
+                        </div>
+                        <div class="event-img flex">
+                        <div class="edit">
+                            <img src="../images/edit.png" alt="edit">
+                        </div>
+                        <div class="remove">
+                            <img src="../images/remove.png" alt="remove">
+                        </div>
+                        </div>
+                    </div>
+
+                    <div class="event-line flex">
+                        <div class="event-checkbox">
+                            <input type="checkbox">
+                        </div>
+                        <div class="event-text">
+                            <p class="small">
+                                Lines From Great Russian Literature? Or E-mails From My Boss?
+                            </p>
+                        </div>
+                        <div class="event-img flex">
+                            <div class="edit">
+                                <img src="../images/edit.png" alt="edit">
+                            </div>
+                            <div class="remove">
+                                <img src="../images/remove.png" alt="remove">
+                            </div>
+                            </div>
+                    </div>
+                    <div class="event-line flex">
+                        <div class="event-checkbox">
+                            <input type="checkbox">
+                        </div>
+                        <div class="event-text">
+                            <p class="small">
+                                Sign contract for "What are conference organizers afraid of?"
+                            </p>
+                        </div>
+                        <div class="event-img flex">
+                            <div class="edit">
+                                <img src="../images/edit.png" alt="edit">
+                            </div>
+                            <div class="remove">
+                                <img src="../images/remove.png" alt="remove">
+                            </div>
+                            </div>
+                    </div>
+                    <div class="event-line flex">
+                        <div class="event-checkbox">
+                            <input type="checkbox">
+                        </div>
+                        <div class="event-text">
+                            <p class="small">
+                                Sign contract for "What are conference organizers afraid of?"
+                            </p>
+                        </div>
+                        <div class="event-img flex">
+                            <div class="edit">
+                                <img src="../images/edit.png" alt="edit">
+                            </div>
+                            <div class="remove">
+                                <img src="../images/remove.png" alt="remove">
+                            </div>
+                            </div>
+                    </div>
+                </div>
+            </div>
+             
+            <!-- Правая часть -->
+            
+            <div class="service flex">
+                <div class="list_header flex">
+                    <span class="color-white capitalize margin">
+                        employees stats
+                    </span>
+                    <span class="color-white margin small">
+                        New employees on 19th September, 2019 
+                    </span>
+                </div>
+                <div class="list-container flex small">
+                    <div class="list-line flex blue-text">
+                        <div class="list-id">
+                            <p>
+                                ID
+                            </p>
+                        </div>
+                        <div class="list-name">
+                            <p>
+                                Name
+                            </p>
+                        </div>
+                        <div class="list-salary">
+                            <p>
+                                Salary
+                            </p>
+                        </div>
+                        <div class="list-country">
+                            <p>
+                                Country
+                            </p>
+                        </div>
+                    </div>
+                    <div class="list-line flex">
+                        <div class="list-id">
+                            <p>
+                                1
+                            </p>
+                        </div>
+                        <div class="list-name">
+                            <p>
+                                Dakota Rice
+                            </p>
+                        </div>
+                        <div class="list-salary">
+                            <p>
+                                $36.738
+                            </p>
+                        </div>
+                        <div class="list-country">
+                            <p>
+                                Niger
+                            </p>
+                        </div>
+                    </div>
+                    <div class="list-line flex">
+                        <div class="list-id">
+                            <p>
+                                1
+                            </p>
+                        </div>
+                        <div class="list-name">
+                            <p>
+                                Dakota Rice
+                            </p>
+                        </div>
+                        <div class="list-salary">
+                            <p>
+                                $36.738
+                            </p>
+                        </div>
+                        <div class="list-country">
+                            <p>
+                                Niger
+                            </p>
+                        </div>
+                    </div>
+                    <div class="list-line flex">
+                        <div class="list-id">
+                            <p>
+                                1
+                            </p>
+                        </div>
+                        <div class="list-name">
+                            <p>
+                                Dakota Rice
+                            </p>
+                        </div>
+                        <div class="list-salary">
+                            <p>
+                                $36.738
+                            </p>
+                        </div>
+                        <div class="list-country">
+                            <p>
+                                Niger
+                            </p>
+                        </div>
+                    </div>
+                    <div class="list-line flex">
+                        <div class="list-id">
+                            <p>
+                                1
+                            </p>
+                        </div>
+                        <div class="list-name">
+                            <p>
+                                Dakota Rice
+                            </p>
+                        </div>
+                        <div class="list-salary">
+                            <p>
+                                $36.738
+                            </p>
+                        </div>
+                        <div class="list-country">
+                            <p>
+                                Niger
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <hr>
+
+            <!-- Футер -->
+
+        <div class="footer-container flex x-small fat">
+            <nav>
+                <ul>
+                    <li>
+                        <a href="#" class="footer-text">
+                            about
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="footer-text">
+                            blog
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="footer-text">
+                            licenses
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+            <p class="align-right">
+                2019 made with love
+            </p>
+        </div>
+    </div>
+
+            <!-- Конец первой страницы     -->
+
+</body>
+</html>
+

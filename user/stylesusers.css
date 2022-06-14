@@ -1,0 +1,386 @@
+            /* Общие стили */
+
+@import url('https://fonts.googleapis.com/css2?family=Nuosu+SIL&display=swap');
+
+* {
+    margin:0;
+    box-sizing:border-box;
+    font-family: 'Nuosu SIL', serif;
+}
+
+body {
+    background-color: bisque;
+}
+
+ul {
+    list-style: none;   
+    padding: 0;   
+}
+
+li a {
+    color: black;
+    text-decoration: none;
+}
+
+.x-small {
+    font-size: x-small;
+    margin-left: 5px;
+}
+
+.small {
+    font-size: small;
+}
+
+.large {
+    font-size: large;
+}
+
+.x-large {
+    font-size: x-large;
+}
+
+.flex, .footer-container ul, .nested_header ul {
+    display: flex;
+}
+
+.capitalize {
+    text-transform: capitalize;
+}
+
+            /* Боковое меню */
+
+.menu {
+    margin-top: 20px;
+}
+            
+.menu-point {
+    margin-left: 40px;
+    white-space: nowrap;
+}
+            
+.menu-img {
+    background-size: 20px;
+    width: 20px;
+    height: 20px;
+    display: flex;
+    align-items: center;
+    transition-duration: 0.4s;
+}
+            
+.dashboard_gray {
+    background-image: url(../images/dashboard_gray.svg);
+}
+            
+.account_gray {
+    background-image: url(../images/account_gray.svg);
+}
+            
+.map_gray {
+    background-image: url(../images/map_gray.svg);
+}
+            
+.notify_gray {
+    background-image: url(../images/notify_gray.svg);
+}
+            
+.support_gray {
+    background-image: url(../images/support_gray.svg);
+}
+            
+.container-menu {
+    height: 100vh;
+    width: 175px;
+    position: fixed;
+    border: 2px ridge grey;
+    background-color: rgb(241, 238, 238);
+}
+            
+    .menu-item {
+display: flex;
+align-items: center;
+height: 55px;
+}
+            
+.menu-item:hover {
+    background-color: #AB274F;
+    cursor: pointer;
+}
+            
+.menu-item span:hover {
+    color: white;
+}
+            
+.dashboard_gray:hover {
+    background-image: url(../images/dashboard_white.svg);
+}
+            
+.account_gray:hover {
+    background-image: url(../images/account_white.svg);
+}
+            /* Заголовок */
+
+.heading {
+    margin-left: calc(185px - 15px - 5px);
+    align-items: center;
+}
+
+.heading img {
+    width: 15px;
+    height: 15px;
+    margin-right: 5px;
+    opacity: 0;
+    visibility: hidden;
+}
+
+.fat {
+    font-weight: 600;
+}
+
+            /* Общие стили */
+
+.purple {
+    background-color: #AB274F;
+}
+
+.white {
+    color: white;
+}
+
+            /* Инпут панель */
+
+.wrapper {
+    display: flex;
+    margin: 5px 5px 5px 185px;
+    
+}
+
+.input {
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+    height: 80vh;
+    margin: 30px 5px 5px 5px;
+    background-color: rgb(241, 238, 238);
+    position: relative;
+    align-items: center;
+    border: 2px ridge grey;
+    box-shadow: 0 0 5px 2px;
+}
+
+.input-header {
+    position: absolute;
+    width: 90%;
+    height: 50px;
+    margin-top: -20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.input-header p {
+    margin-left: 10px;
+}
+
+
+.first-line, .two-line, .three-line, .four-line, .five-line  {
+    display: flex;
+    margin-top: 40px;
+    width: 90%;
+    justify-content: space-between;
+   
+}
+
+/* .two-line {
+    display: flex;
+    width: 90%;
+    
+} */
+
+.evenly-three {
+    width: 31%;
+    flex-direction: column;
+    display: flex;
+    
+
+}
+
+.evenly-two {
+    width: 48%;
+    flex-direction: column;
+    display: flex;
+}
+
+.evenly-one {
+    width: 100%;
+    flex-direction: column;
+    display: flex;
+}
+
+
+
+.input {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}    
+
+input {
+    border: 0;
+    border-bottom: 1px solid #000;
+    background-color: rgba(0,0,0,0);
+    outline: 0;
+}
+
+label {
+    cursor: pointer;
+}
+
+
+.evenly {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.button {
+    width: 90%;
+    margin-top: 40px;
+    margin: 40px 20px;
+    right: 10px;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.styled {
+    border: 0;
+    line-height: 2.5;
+    width: 33%;
+    text-align: center;
+    color: #fff;
+    text-shadow: 1px 1px 1px #000;
+    background-color: rgba(171,39,79,1);
+    background-image: linear-gradient(to top left,
+                                      rgba(0, 0, 0, .2),
+                                      rgba(0, 0, 0, .2) 30%,
+                                      rgba(0, 0, 0, 0));
+    box-shadow: inset 2px 2px 3px rgba(255, 255, 255, .6),
+                inset -2px -2px 3px rgba(0, 0, 0, .6);
+}
+
+.styled:hover {
+    background-color: rgb(196, 38, 85);
+    cursor: pointer;
+}
+
+.styled:active {
+    box-shadow: inset -2px -2px 3px rgba(255, 255, 255, .6),
+                inset 2px 2px 3px rgba(0, 0, 0, .6);
+}
+
+            /* Блок профиль */
+
+.profile-container {
+    width: 40%;
+    height: 40vh;
+    margin: 30px 5px 5px 5px;
+    background-color: rgb(241, 238, 238);
+    display: flex;
+    position: relative;
+    align-items: center;
+    flex-direction: column;
+    border: 2px ridge grey;
+    box-shadow: 0 0 5px 2px;
+}
+
+.img-profile {
+    position: absolute;
+    margin-top: -30px;
+}
+
+.img-profile img {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+}
+
+.profile-text {
+    margin-top: 100px;
+}
+
+.center {
+    text-align: center;
+}
+
+            /* Футер */
+
+.footer-container {
+    margin: 5px 5px 5px 185px;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    justify-content: start;
+}
+
+.footer-text {
+    margin-right: 10px;
+    text-transform: uppercase;
+}
+
+.align-right {
+    margin-left: auto;
+}
+
+            /* Медиаскрины */
+
+@media screen and (min-width: 800px) and (max-width: 1000px) {
+
+    .wrapper {
+        flex-direction: column-reverse;
+    }
+
+    .input, .profile-container {
+        width: 98%;
+    }
+}
+
+@media screen and (max-width: 800px) {
+
+    .container-menu {
+        opacity: 0;
+        visibility: hidden;
+    }
+
+    .heading {
+        margin-left: 3px;
+    }
+    
+    .heading img {
+        opacity: 1;
+        visibility: visible;
+    }
+
+    .burger {
+        cursor: pointer;
+    }
+    
+    .wrapper, .footer-container {
+        margin-left: 0;
+    }
+
+    .wrapper {
+        flex-direction: column-reverse;
+        
+    }
+
+    .input {
+        width: 98%;
+    }
+
+    .profile-container {
+        width: 98%;
+    }
+
+}
+
+            
+
+
