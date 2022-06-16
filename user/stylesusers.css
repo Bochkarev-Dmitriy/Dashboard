@@ -176,15 +176,8 @@ li a {
     position: relative;
     align-items: center;
     border: 2px ridge grey;
-    /* box-shadow: 0 0 5px 2px; */
     box-shadow: 0 0 5px;
 }
-
-/* .input {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}     */
 
 .input-header {
     position: absolute;
@@ -200,27 +193,17 @@ li a {
     margin-left: 10px;
 }
 
-
 .first-line, .two-line, .three-line, .four-line, .five-line  {
     display: flex;
     margin-top: 40px;
     width: 90%;
     justify-content: space-between;
-   
 }
-
-/* .two-line {
-    display: flex;
-    width: 90%;
-    
-} */
 
 .evenly-three {
     width: 31%;
     flex-direction: column;
     display: flex;
-    
-
 }
 
 .evenly-two {
@@ -245,7 +228,6 @@ input {
 label {
     cursor: pointer;
 }
-
 
 .evenly {
     display: flex;
@@ -303,7 +285,6 @@ label {
     align-items: center;
     flex-direction: column;
     border: 2px ridge grey;
-    /* box-shadow: 0 0 5px 2px; */
     box-shadow: 0 0 5px;
 }
 
@@ -398,7 +379,7 @@ label {
     }
 
     .heading {
-        margin-left: 3px;
+        margin-left: 10px;
     }
     
     .heading img {
@@ -408,6 +389,7 @@ label {
 
     .burger {
         cursor: pointer;
+        padding-left: 10px;
     }
     
     .wrapper, .footer-container {
@@ -445,15 +427,16 @@ label {
         margin: 16px 16px 20px 16px;
     }
 
-    .heading {
-        margin-left: 21px;
-    }
-
     .addres::before {
         content: 'Emaill';
     }
-    
 
+    .sticky {
+        position: sticky;
+        top: 0;
+        z-index: 5;
+        background-color: rgba(255, 228, 196, 0.712);
+    }    
 }
 
             
