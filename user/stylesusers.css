@@ -170,13 +170,16 @@ li a {
     display: flex;
     flex-direction: column;
     width: 60%;
-    height: 75vh;
     margin: 30px 8px 16px 16px;
     background-color: rgb(241, 238, 238);
     position: relative;
     align-items: center;
     border: 2px ridge grey;
     box-shadow: 0 0 5px;
+}
+
+.input-form {
+    width: 90%;
 }
 
 .input-header {
@@ -196,7 +199,7 @@ li a {
 .first-line, .two-line, .three-line, .four-line, .five-line  {
     display: flex;
     margin-top: 40px;
-    width: 90%;
+    width: 100%;
     justify-content: space-between;
 }
 
@@ -277,8 +280,7 @@ label {
 
 .profile-container {
     width: 40%;
-    height: 45vh;
-    margin: 30px 16px 16px 8px;
+    margin: 30px 16px 250px 8px;
     background-color: rgb(241, 238, 238);
     display: flex;
     position: relative;
@@ -307,7 +309,7 @@ label {
 
 .center {
     text-align: center;
-    padding: 0px 10px 0px 10px;
+    padding: 10px;
 }
 
 .profile-name {
