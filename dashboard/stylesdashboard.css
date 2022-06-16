@@ -63,8 +63,6 @@ li a {
     background-color: #AB274F;
 }
 
-
-
             /* Боковое меню */
 
 .menu {
@@ -78,31 +76,36 @@ li a {
 
 .menu-img {
     background-size: 20px;
-    width: 20px;
-    height: 20px;
+    width: 156px;
+    height: 55px;
     display: flex;
     align-items: center;
-    transition-duration: 0.4s;
+    background-repeat: no-repeat;
 }
 
 .dashboard_gray {
     background-image: url(../images/dashboard_gray.svg);
+    background-position:left, center;
 }
 
 .account_gray {
     background-image: url(../images/account_gray.svg);
+    background-position:left, center;
 }
 
 .map_gray {
     background-image: url(../images/map_gray.svg);
+    background-position:left, center;
 }
 
 .notify_gray {
     background-image: url(../images/notify_gray.svg);
+    background-position:left, center;
 }
 
 .support_gray {
     background-image: url(../images/support_gray.svg);
+    background-position:left, center;
 }
 
 .container-menu {
@@ -117,12 +120,20 @@ li a {
     display: flex;
     align-items: center;
     height: 55px;
+    padding-left: 15px;
+    transition-duration: 0.4s;
+}
+
+.active {
+    background-color: #ab274f25;
 }
 
 .menu-item:hover {
     background-color: #AB274F;
     cursor: pointer;
 }
+
+
 
 .menu-item span:hover {
     color: white;
@@ -153,12 +164,13 @@ li a {
 
 .fat {
     font-weight: 600;
+    margin: 15px;
 }
 
             /* Верхний контейнер (состоящий из четырёх карточек) */
 
 .select-container {
-    margin: 5px 5px 5px 185px;
+    margin: 16px 16px 16px 190px;
     text-overflow: ellipsis;
     overflow: hidden;
     justify-content: space-between;   
@@ -179,7 +191,7 @@ li a {
     display: flex;
     flex-direction: column;
     border: 2px ridge grey;
-    box-shadow: 0 0 5px 2px;
+    box-shadow: 0 0 5px;
 }
 
 .model-top{
@@ -228,7 +240,7 @@ hr {
             /* Средний контейнер (состоящий из трёх карточек) */
 
 .analytics-container {
-    margin: 5px 5px 5px 185px;
+    margin: 16px 16px 16px 190px;
     text-overflow: ellipsis;
     overflow: hidden;
     justify-content: space-between;   
@@ -244,7 +256,7 @@ hr {
     position: relative;
     align-items: flex-start;
     border: 2px ridge grey;
-    box-shadow: 0 0 5px 2px;
+    box-shadow: 0 0 5px;
 }
 
 .analytics-inform {
@@ -284,7 +296,7 @@ hr {
             /* Нижний контейнер (состоящий из двух карточек) */
 
 .service-container {
-    margin: 5px 5px 5px 185px;
+    margin: 16px 16px 16px 190px;
     text-overflow: ellipsis;
     overflow: hidden;
     justify-content: space-between;
@@ -295,7 +307,7 @@ hr {
     height: 230px;
     background-color: rgb(241, 238, 238);
     border: 2px ridge grey;
-    box-shadow: 0 0 5px 2px;
+    box-shadow: 0 0 5px;
     margin: 20px 5px 5px 5px;
     padding: 5px; 
     position: relative; 
@@ -314,10 +326,11 @@ hr {
 
 .menu-nested {
     margin-left: 5%;
+    padding: 7px;
 }
 
 .nav {
-    width: 70%;
+    width: 80%;
 }
 
 .menu-nested:hover {
@@ -404,7 +417,7 @@ hr {
             /* Футер */
 
 .footer-container {
-    margin: 5px 5px 5px 185px;
+    margin: 16px 16px 20px 190px;
     text-overflow: ellipsis;
     overflow: hidden;
     justify-content: start;
@@ -417,6 +430,24 @@ hr {
 
 .align-right {
     margin-left: auto;
+}
+
+            /* Тени */
+
+.green-shadow:hover {
+    box-shadow: 0 0 5px 2px green;
+}
+
+.orange-shadow:hover {
+    box-shadow: 0 0 5px 2px orange;
+}
+
+.blue-shadow:hover {
+    box-shadow: 0 0 5px 2px blue;
+}
+
+.purple-shadow:hover {
+    box-shadow: 0 0 5px 2px #AB274F;
 }
 
             /* Медиаскрины */
@@ -497,6 +528,26 @@ hr {
     .graphics {
         height: 50%;
     }
+
+    .heading {
+        margin-left: 21px;
+    }
+
+    .select-container {
+        margin-left: 16px;
+    }
+
+    .analytics-container {
+        margin-left: 16px;
+    }
+
+    .service-container {
+        margin-left: 16px;
+    }
+
+    .footer-container {
+        margin: 16px 16px 20px 16px;
+    }
 }
 
 @media screen and (min-width: 500px) and (max-width: 650px) {
@@ -542,10 +593,11 @@ hr {
 
     .analytics {
         width: 98%;
+        height: 310px;
     }
 
     .graphics {
-        height: 60%;
+        height: 80%;
     }
 
     .service-container {
@@ -554,6 +606,30 @@ hr {
 
     .service {
         width: 98%;
+    }
+
+    .footer-container {
+        margin: 16px 16px 20px 16px;
+    }
+
+    .heading {
+        margin-left: 21px;
+    }
+
+    .select-container {
+        margin-left: 16px;
+    }
+
+    .analytics-container {
+        margin-left: 16px;
+    }
+
+    .service-container {
+        margin-left: 16px;
+    }
+
+    .footer-container {
+        margin: 16px 16px 20px 16px;
     }
 }
 
@@ -617,6 +693,50 @@ hr {
 
     .service {
         width: 98%;
+        height: 300px;
     }
-    
+
+    .list_header {
+        height: 20%;
+    }
+
+    .margin {
+        margin-left: 10px;
+    }
+
+    .xx-smal {
+        font-size: x-small;
+    }
+
+    .menu-nested {
+        margin-left: 2%;
+    }
+
+    .footer-container {
+        margin: 16px 16px 20px 16px;
+    }
+
+    .heading {
+        margin-left: 21px;
+    }
+
+    .select-container {
+        margin-left: 16px;
+    }
+
+    .analytics-container {
+        margin-left: 16px;
+    }
+
+    .service-container {
+        margin-left: 16px;
+    }
+
+    .footer-container {
+        margin: 16px 16px 20px 16px;
+    }
+
+    .changing-font {
+        font-size: x-small;
+    }
 }
